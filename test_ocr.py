@@ -9,7 +9,7 @@ import time
 model = ONNXPaddleOcr(use_angle_cls=True, use_gpu=False)
 
 
-img = cv2.imread('./onnxocr/test_images/715873facf064583b44ef28295126fa7.jpg')
+img = cv2.imread('./images/poem.png')
 s = time.time()
 result = model.ocr(img)
 e = time.time()

@@ -589,7 +589,7 @@ def draw_text_boxes(image, ocr_result):
         cv2.polylines(result_image, [pts], True, color, 2)
     return result_image
 
-def process_image(image_path, models, device, use_enhancement=False, use_dewarp=True):
+def process_image(image_path, models, device, use_enhancement=False, use_dewarp=False):
     """
     处理单张图片并返回OCR结果
 
@@ -704,7 +704,7 @@ def process():
     try:
         # 获取处理参数
         use_enhancement = request.form.get('use_enhancement', 'false').lower() == 'true'
-        use_dewarp = request.form.get('use_dewarp', 'true').lower() == 'true'
+        use_dewarp = request.form.get('use_dewarp', 'false').lower() == 'true'
 
         # 检查外观增强功能是否可用
         if use_enhancement and (models['gcnet'] is None or models['drnet'] is None):
@@ -1486,7 +1486,7 @@ def index():
 
         <script>
             // API基础URL
-            const API_BASE_URL = 'http://localhost:5000';
+            const API_BASE_URL = 'http://127.0.0.1:5000';
 
             let enhancementAvailable = false;
 
@@ -1838,4 +1838,4 @@ if __name__ == '__main__':
 
     print(f"模型初始化成功，使用设备: {device}")
     print("启动服务器...")
-    app.run(host='0.0.0.0', port=5000, debug=False)
+    app.run(host='127.0.0.1', port=5000, debug=False)
