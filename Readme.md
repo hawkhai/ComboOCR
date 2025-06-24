@@ -1,6 +1,7 @@
 # ComboOCR - 智能文本识别系统
-
-<img src="images\ComboOCR_log.svg" alt="log" style="zoom:200%;" />
+<div align="center">
+    <img src="images\ComboOCR_log.svg" alt="log" style="zoom:200%;" />
+</div>
 
 ![ComboOCR](https://img.shields.io/badge/ComboOCR-%E6%99%BA%E8%83%BDOCR-blue) ![Python](https://img.shields.io/badge/Python-3.8+-green) ![Flask](https://img.shields.io/badge/Flask-2.0+-orange)
 
@@ -47,7 +48,7 @@ python flask_ocr.py
 | --------------- | ------- | ---- | -------------------------------- |
 | image           | file    | 是   | 图像文件 (支持 png/jpg/jpeg/bmp) |
 | use_enhancement | boolean | 否   | 是否启用外观增强 (默认: false)   |
-| use_dewarp      | boolean | 否   | 是否启用扭曲矫正 (默认: true)    |
+| use_dewarp      | boolean | 否   | 是否启用扭曲矫正 (默认: false)   |
 
 **请求示例**:
 
@@ -68,7 +69,7 @@ curl -X POST http://localhost:5000/process \
       "polygon": [x1, y1, x2, y2, x3, y3, x4, y4],
       "text": "文本内容"
     },
-    ...
+    ......
   ],
   "visualization": "base64编码的可视化图像",
   "processing_info": {
@@ -90,4 +91,42 @@ ComboOCR/
 ├── utils/                 # 工具函数
 └── temp_uploads/          # 临时文件目录
 ```
+
+## 🎨 OCR结果展示
+
+#### Web界面展示
+<div align="center">
+    <img src="images/web_show.png" alt="web" style="zoom:50%;" />
+</div>
+
+#### demo1
+<div align="center">
+    <img src="images\show1.png" alt="show1" style="zoom:30%;" />
+</div>
+
+#### demo2
+<div align="center">
+    <img src="images\show2.png" alt="show2" style="zoom:13%;" />
+</div>
+
+#### demo3（扭曲矫正）
+<div align="center">
+    <img src="images\dewarp_show.jpeg" alt="dewarp" />
+</div>
+
+#### demo4（外观增强）
+<div align="center">
+    <img src="images\enhance_show.jpeg" alt="enhance" />
+</div>
+
+#### demo5（手写体）
+<div align="center">
+    <img src="images\hand_writing_show.png" alt="hand_writing" style="zoom:40%;" />
+</div>
+
+
+
+
+
+
 
