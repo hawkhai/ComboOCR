@@ -1,6 +1,6 @@
 # ComboOCR - 智能文本识别系统
 <div align="center">
-    <img src="images\ComboOCR_log.svg" alt="log" style="zoom:200%;" />
+    <img src="images\ComboOCR_log.svg" alt="log" style="zoom:400%;" />
 </div>
 
 ![ComboOCR](https://img.shields.io/badge/ComboOCR-%E6%99%BA%E8%83%BDOCR-blue) ![Python](https://img.shields.io/badge/Python-3.8+-green) ![Flask](https://img.shields.io/badge/Flask-2.0+-orange)
