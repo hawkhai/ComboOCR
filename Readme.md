@@ -1,4 +1,7 @@
+简体中文 | [English](./Readme_en.md) |
+
 # ComboOCR - 智能文本识别系统
+
 <div align="center">
     <img src="images\ComboOCR_logo.svg" alt="logo" style="zoom:400%;" />
 </div>
