@@ -94,36 +94,35 @@ ComboOCR/
 
 ## 🎨 OCR结果展示
 
-#### Web界面展示
+### Web界面展示
 <div align="center">
     <img src="images/web_show.png" alt="web" style="zoom:50%;" />
 </div>
 
-#### demo1
+### demo1
 <div align="center">
     <img src="images\show1.png" alt="show1" style="zoom:30%;" />
 </div>
 
-#### demo2
+### demo2
 <div align="center">
     <img src="images\show2.png" alt="show2" style="zoom:13%;" />
 </div>
 
-#### demo3（扭曲矫正）
+### demo3（扭曲矫正）
 <div align="center">
     <img src="images\dewarp_show.jpeg" alt="dewarp" />
 </div>
 
-#### demo4（外观增强）
+### demo4（外观增强）
 <div align="center">
     <img src="images\enhance_show.jpeg" alt="enhance" />
 </div>
 
-#### demo5（手写体）
+### demo5（手写体）
 <div align="center">
     <img src="images\hand_writing_show.png" alt="hand_writing" style="zoom:40%;" />
 </div>
-
 
 
 
