@@ -1,6 +1,6 @@
 # ComboOCR - 智能文本识别系统
 
-<img src="C:\Users\Administrator\Desktop\wmc_github\ComboOCR\images\ComboOCR_log.svg" alt="log" style="zoom:200%;" />
+<img src="images\ComboOCR_log.svg" alt="log" style="zoom:200%;" />
 
 ![ComboOCR](https://img.shields.io/badge/ComboOCR-%E6%99%BA%E8%83%BDOCR-blue) ![Python](https://img.shields.io/badge/Python-3.8+-green) ![Flask](https://img.shields.io/badge/Flask-2.0+-orange)
 
@@ -41,8 +41,6 @@ python flask_ocr.py
 
 ### 图像识别接口
 
-**请求方式**: POST
-**请求地址**: `/process`
 **请求参数**:
 
 | 参数            | 类型    | 必填 | 说明                             |
@@ -67,10 +65,10 @@ curl -X POST http://localhost:5000/process \
   "sorted_text": "识别出的文本内容",
   "ocr_result": [
     {
-      "polygon": [x1,y1,x2,y2,x3,y3,x4,y4],
+      "polygon": [x1, y1, x2, y2, x3, y3, x4, y4],
       "text": "文本内容"
     },
-    ......
+    ...
   ],
   "visualization": "base64编码的可视化图像",
   "processing_info": {
