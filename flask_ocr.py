@@ -1477,8 +1477,8 @@ def index():
         </div>
 
         <script>
-            // API基础URL
-            const API_BASE_URL = 'http://127.0.0.1:5000';
+            // API基础URL - 动态获取当前页面的主机地址
+            const API_BASE_URL = `${window.location.protocol}//${window.location.host}`;
 
             let enhancementAvailable = false;
 
