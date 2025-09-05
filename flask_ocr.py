@@ -740,14 +740,7 @@ def process():
         traceback.print_exc()
         return jsonify({"error": str(e)}), 500
 
-@app.route('/health')
-def health_check():
-    enhancement_available = models and models['gcnet'] is not None and models['drnet'] is not None
-    return jsonify({
-        "status": "OK",
-        "message": "Server is running",
-        "enhancement_available": enhancement_available
-    })
+# Health check endpoint removed to prevent connection issues
 
 @app.route('/', methods=['GET'])
 def index():
@@ -1673,24 +1666,9 @@ def index():
                     }
                 });
 
-                // 检查服务器健康状态
-                fetch(`${API_BASE_URL}/health`)
-                    .then(response => response.json())
-                    .then(data => {
-                        console.log('服务器状态:', data);
-                        enhancementAvailable = data.enhancement_available;
-
-                        if (!enhancementAvailable) {
-                            useEnhancementCheckbox.disabled = true;
-                            enhancementItem.classList.add('disabled');
-                            enhancementWarning.style.display = 'block';
-                        }
-                    })
-                    .catch(error => {
-                        errorDiv.textContent = '无法连接到服务器，请确保服务器已启动。';
-                        errorDiv.style.display = 'block';
-                        processBtn.disabled = true;
-                    });
+                // 直接检查增强功能可用性（无需健康检查）
+                // 假设增强功能默认可用，如果处理时不可用会返回错误
+                enhancementAvailable = true;
 
                 // 处理选项变化时更新加载提示
                 function updateLoadingSteps() {
