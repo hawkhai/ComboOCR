@@ -1403,8 +1403,7 @@ def index():
     <body>
         <div class="container">
             <div class="header">
-                <h1>🔍 ComboOCR文本识别系统</h1>
-                <p>基于深度学习的智能文字识别平台</p>
+                <h1>扭曲矫正 DEMO，欢迎试用！</h1>
             </div>
 
             <div class="content">
@@ -1702,7 +1701,7 @@ def index():
                     if (useDewarpCheckbox.checked) {
                         steps.push('扭曲矫正');
                     }
-                    steps.push('Combo OCR识别');
+                    steps.push('OCR 识别');
 
                     loadingSteps.textContent = '图像处理步骤：' + steps.join(' → ');
                 }
