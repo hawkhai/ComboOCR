@@ -1,0 +1,49 @@
+{
+  "copylist": [],
+  "copylist_note": "上传前，须要拷贝的文件列表，每个的格式是：['fromfile', 'tofile']。",
+  "filemd5_cachesize": 5000,
+  "gitremote": "pdfreader",
+  "gitremote_note": "远程根目录 'pdfreader'。",
+  "mainfile": "gitbigfilex.json",
+  "others": [
+    "*.py",
+    "models"
+  ],
+  "submit_dir": "dewarp_demo",
+  "timeout": 365,
+  "timeout_note": "自动清理 365 天前的文件。",
+  "timeout_reserved": 20,
+  "timeout_reserved_note": "不会清理最新的 20 个文件夹（保底保留文件夹个数）。",
+  "upload": {
+    "comment": "这个节点是程序自动维护的，不要修改。上面的 'others' 字段支持配置文件夹。",
+    "count": 26,
+    "others": [
+      "flask_ocr.py",
+      "infer.py",
+      "model\\extractor.py",
+      "model\\GeoTr.py",
+      "model\\position_encoding.py",
+      "model\\unext.py",
+      "models\\doctr_plus\\model.pt",
+      "models\\gcdr_net\\drnet\\checkpoint.pkl",
+      "models\\gcdr_net\\gcnet\\checkpoint.pkl",
+      "onnxocr\\__init__.py",
+      "onnxocr\\cls_postprocess.py",
+      "onnxocr\\db_postprocess.py",
+      "onnxocr\\imaug.py",
+      "onnxocr\\logger.py",
+      "onnxocr\\onnx_paddleocr.py",
+      "onnxocr\\operators.py",
+      "onnxocr\\predict_base.py",
+      "onnxocr\\predict_cls.py",
+      "onnxocr\\predict_det.py",
+      "onnxocr\\predict_rec.py",
+      "onnxocr\\predict_system.py",
+      "onnxocr\\rec_postprocess.py",
+      "onnxocr\\utils.py",
+      "test_ocr.py",
+      "utils\\utils_doctr_plus.py",
+      "utils\\utils_gcdrnet.py"
+    ]
+  }
+}
